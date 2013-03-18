@@ -1,10 +1,10 @@
 name = Taxonomies and taxonomy importers
-description = Feature tilføjer taxonomier og feeds importers
+description = Module to import taxonomies and its vocabularies
 core = 7.x
-package = OS2Web - Imports
+package = OS2Web - Core
 php = 5.2.4
 version = 7.x-1.10
-project = OS2Web
+project = os2web_taxonomies
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = feeds
