@@ -7,17 +7,17 @@
 /**
  * Implements hook_field_default_fields().
  */
-function os2web_taxonomies_field_default_fields() {
+function field_os2web_taxonomies_default_fields() {
   $fields = array();
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_department_id'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_department_id'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_dep_id'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_dep_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_department_id',
+      'field_name' => 'field_os2web_taxonomies_dep_id',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -40,7 +40,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_department_id',
+      'field_name' => 'field_os2web_taxonomies_dep_id',
       'label' => 'Afdelingsid',
       'required' => 1,
       'settings' => array(
@@ -60,14 +60,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_department_name'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_department_name'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_dep_name'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_dep_name'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_department_name',
+      'field_name' => 'field_os2web_taxonomies_dep_name',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -104,7 +104,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_department_name',
+      'field_name' => 'field_os2web_taxonomies_dep_name',
       'label' => 'Afdelingsnavn',
       'required' => 0,
       'settings' => array(
@@ -123,14 +123,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_system_id'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_system_id'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_sys_id'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_sys_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_system_id',
+      'field_name' => 'field_os2web_taxonomies_sys_id',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -153,7 +153,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_system_id',
+      'field_name' => 'field_os2web_taxonomies_sys_id',
       'label' => 'Systemid',
       'required' => 1,
       'settings' => array(
@@ -173,14 +173,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_city'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_city'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_city'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_city'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_city',
+      'field_name' => 'field_os2web_taxonomies_city',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -216,7 +216,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_city',
+      'field_name' => 'field_os2web_taxonomies_city',
       'label' => 'GIS postby',
       'required' => 0,
       'settings' => array(
@@ -236,13 +236,13 @@ function os2web_taxonomies_field_default_fields() {
   );
 
   // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_name'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_name'] = array(
+  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_name'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_name',
+      'field_name' => 'field_os2web_taxonomies_name',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -278,7 +278,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_name',
+      'field_name' => 'field_os2web_taxonomies_name',
       'label' => 'GIS navn',
       'required' => 0,
       'settings' => array(
@@ -297,14 +297,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_system_id'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_system_id'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_sys_id'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_sys_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_system_id',
+      'field_name' => 'field_os2web_taxonomies_sys_id',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -327,7 +327,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_system_id',
+      'field_name' => 'field_os2web_taxonomies_sys_id',
       'label' => 'GIS id',
       'required' => 0,
       'settings' => array(
@@ -347,14 +347,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_type'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_type'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_type'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_places-field_os2web_taxonomies_type'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_type',
+      'field_name' => 'field_os2web_taxonomies_type',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -390,7 +390,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_type',
+      'field_name' => 'field_os2web_taxonomies_type',
       'label' => 'GIS type',
       'required' => 0,
       'settings' => array(
@@ -409,14 +409,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_cue_word'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_cue_word'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_cue_word'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_cue_word'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_cue_word',
+      'field_name' => 'field_os2web_taxonomies_cue_word',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -453,7 +453,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_cue_word',
+      'field_name' => 'field_os2web_taxonomies_cue_word',
       'label' => 'KLE stikord',
       'required' => 0,
       'settings' => array(
@@ -472,14 +472,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_discontinued'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_discontinued'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_dis_cont'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_dis_cont'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -506,7 +506,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'label' => 'Udgået',
       'required' => 0,
       'settings' => array(
@@ -526,14 +526,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_legislation_reference'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_legislation_reference'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_legi_ref'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_legi_ref'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_legislation_reference',
+      'field_name' => 'field_os2web_taxonomies_legi_ref',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -571,7 +571,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_legislation_reference',
+      'field_name' => 'field_os2web_taxonomies_legi_ref',
       'label' => 'Lovhenvisninger',
       'required' => 0,
       'settings' => array(
@@ -603,14 +603,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_search_word'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_search_word'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_search'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_kle-field_os2web_taxonomies_search'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -646,7 +646,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'label' => 'Søgeord',
       'required' => 0,
       'settings' => array(
@@ -665,14 +665,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_org-field_discontinued'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_org-field_discontinued'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_org-field_os2web_taxonomies_dis_cont'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_org-field_os2web_taxonomies_dis_cont'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -699,7 +699,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'label' => 'Udgået',
       'required' => 0,
       'settings' => array(
@@ -719,14 +719,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_org-field_search_word'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_org-field_search_word'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_org-field_os2web_taxonomies_search'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_org-field_os2web_taxonomies_search'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -762,7 +762,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'label' => 'Søgeord',
       'required' => 0,
       'settings' => array(
@@ -781,14 +781,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_acadrecomittee'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_acadrecomittee'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_comittee'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_comittee'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_acadrecomittee',
+      'field_name' => 'field_os2web_taxonomies_comittee',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -830,7 +830,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_acadrecomittee',
+      'field_name' => 'field_os2web_taxonomies_comittee',
       'label' => 'Acadremapning',
       'required' => 0,
       'settings' => array(
@@ -849,14 +849,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_agendaenabled'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_agendaenabled'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_agenda'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_agenda'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_agendaenabled',
+      'field_name' => 'field_os2web_taxonomies_agenda',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -883,7 +883,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_agendaenabled',
+      'field_name' => 'field_os2web_taxonomies_agenda',
       'label' => 'Dagsordensvisning',
       'required' => 0,
       'settings' => array(
@@ -903,14 +903,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_discontinued'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_discontinued'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_dis_cont'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_dis_cont'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -937,7 +937,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_discontinued',
+      'field_name' => 'field_os2web_taxonomies_dis_cont',
       'label' => 'Udgået',
       'required' => 0,
       'settings' => array(
@@ -957,14 +957,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_search_word'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_search_word'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_search'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_politics-field_os2web_taxonomies_search'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1000,7 +1000,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_search_word',
+      'field_name' => 'field_os2web_taxonomies_search',
       'label' => 'Søgeord',
       'required' => 0,
       'settings' => array(
@@ -1019,14 +1019,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_node_reference_kontaktblok'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_node_reference_kontaktblok'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_taxonomies_contact'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_taxonomies_contact'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_node_reference_kontaktblok',
+      'field_name' => 'field_os2web_taxonomies_contact',
       'foreign keys' => array(
         'nid' => array(
           'columns' => array(
@@ -1094,7 +1094,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_node_reference_kontaktblok',
+      'field_name' => 'field_os2web_taxonomies_contact',
       'label' => 'Kontaktblok',
       'required' => 0,
       'settings' => array(
@@ -1114,14 +1114,14 @@ function os2web_taxonomies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_user_pos-field_priority'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_user_pos-field_priority'] = array(
+  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_user_pos-field_os2web_taxonomies_priority'.
+  $fields['taxonomy_term-os2web_taxonomies_tax_user_pos-field_os2web_taxonomies_priority'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_priority',
+      'field_name' => 'field_os2web_taxonomies_priority',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -1150,7 +1150,7 @@ function os2web_taxonomies_field_default_fields() {
         ),
       ),
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_priority',
+      'field_name' => 'field_os2web_taxonomies_priority',
       'label' => 'Priority',
       'required' => 0,
       'settings' => array(

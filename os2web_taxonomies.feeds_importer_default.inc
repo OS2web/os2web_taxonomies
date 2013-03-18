@@ -76,12 +76,12 @@ function os2web_taxonomies_feeds_importer_default() {
           ),
           2 => array(
             'source' => 'xpathparser:2',
-            'target' => 'field_system_id',
+            'target' => 'field_os2web_taxonomies_sys_id',
             'unique' => FALSE,
           ),
           3 => array(
             'source' => 'xpathparser:3',
-            'target' => 'field_type',
+            'target' => 'field_os2web_taxonomies_type',
             'unique' => FALSE,
           ),
           4 => array(
@@ -91,7 +91,7 @@ function os2web_taxonomies_feeds_importer_default() {
           ),
           5 => array(
             'source' => 'xpathparser:5',
-            'target' => 'field_city',
+            'target' => 'field_os2web_taxonomies_city',
             'unique' => FALSE,
           ),
         ),
@@ -193,27 +193,27 @@ function os2web_taxonomies_feeds_importer_default() {
           ),
           4 => array(
             'source' => 'xpathparser:8',
-            'target' => 'field_discontinued',
+            'target' => 'field_os2web_taxonomies_dis_cont',
             'unique' => FALSE,
           ),
           5 => array(
             'source' => 'xpathparser:9',
-            'target' => 'field_legislation_reference:url',
+            'target' => 'field_os2web_taxonomies_legi_ref:url',
             'unique' => FALSE,
           ),
           6 => array(
             'source' => 'xpathparser:10',
-            'target' => 'field_legislation_reference:title',
+            'target' => 'field_os2web_taxonomies_legi_ref:title',
             'unique' => FALSE,
           ),
           7 => array(
             'source' => 'xpathparser:11',
-            'target' => 'field_cue_word',
+            'target' => 'field_os2web_taxonomies_cue_word',
             'unique' => FALSE,
           ),
           8 => array(
             'source' => 'xpathparser:12',
-            'target' => 'field_search_word',
+            'target' => 'field_os2web_taxonomies_search',
             'unique' => FALSE,
           ),
         ),
@@ -298,12 +298,12 @@ function os2web_taxonomies_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'xpathparser:4',
-            'target' => 'field_search_word',
+            'target' => 'field_os2web_taxonomies_search',
             'unique' => FALSE,
           ),
           4 => array(
             'source' => 'xpathparser:5',
-            'target' => 'field_discontinued',
+            'target' => 'field_os2web_taxonomies_dis_cont',
             'unique' => FALSE,
           ),
         ),
@@ -388,12 +388,12 @@ function os2web_taxonomies_feeds_importer_default() {
           ),
           3 => array(
             'source' => 'xpathparser:4',
-            'target' => 'field_search_word',
+            'target' => 'field_os2web_taxonomies_search',
             'unique' => FALSE,
           ),
           4 => array(
             'source' => 'xpathparser:5',
-            'target' => 'field_discontinued',
+            'target' => 'field_os2web_taxonomies_dis_cont',
             'unique' => FALSE,
           ),
         ),
