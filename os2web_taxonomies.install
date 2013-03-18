@@ -9,37 +9,30 @@
 
 function os2web_taxonomies_enable() {
   //Set default KLE taxonomy feed url
-  $source = feeds_source('taxonomy_kle');
+  $source = feeds_source('os2web_taxonomies_feed_kle');
   $config = $source->getConfig();
   $config['FeedsFileFetcher']['source'] = drupal_get_path('module', 'os2web_taxonomies') . '/data/kle.xml';
   $source->setConfig($config);
   $source->save();
 
   //Set default Organisation taxonomy feed url
-  $source = feeds_source('taxonomy_organization');
+  $source = feeds_source('os2web_taxonomies_feed_org');
   $config = $source->getConfig();
   $config['FeedsFileFetcher']['source'] = drupal_get_path('module', 'os2web_taxonomies') . '/data/org.xml';
   $source->setConfig($config);
   $source->save();
 
   //Set default Politik taxonomy feed url
-  $source = feeds_source('taxonomy_politics');
+  $source = feeds_source('os2web_taxonomies_feed_politics');
   $config = $source->getConfig();
   $config['FeedsFileFetcher']['source'] = drupal_get_path('module', 'os2web_taxonomies') . '/data/pol.xml';
   $source->setConfig($config);
   $source->save();
 
   //Set default Egenavne/stednavne taxonomy feed url
-  $source = feeds_source('taxonomy_gisnames');
+  $source = feeds_source('os2web_taxonomies_feed_gis');
   $config = $source->getConfig();
   $config['FeedsFileFetcher']['source'] = drupal_get_path('module', 'os2web_taxonomies') . '/data/kle.xml';
-  $source->setConfig($config);
-  $source->save();
-
-  //Set default Ofir feed url
-  $source = feeds_source('ofir_job_import');
-  $config = $source->getConfig();
-  $config['FeedsHTTPFetcher']['source'] = 'http://job.ofir.dk/Templates/XMLliste_7DAE0E45-E8C0-43EF-9D3C-350F69BE5C9B.asp';
   $source->setConfig($config);
   $source->save();
 }

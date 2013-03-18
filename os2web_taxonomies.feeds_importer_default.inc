@@ -13,7 +13,7 @@ function os2web_taxonomies_feeds_importer_default() {
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'taxonomy_gisnames';
+  $feeds_importer->id = 'os2web_taxonomies_feed_gis';
   $feeds_importer->config = array(
     'name' => 'Taksonomi: Egennavne/stednavne',
     'description' => 'Importerer Egennavne/stednavne taksonomien',
@@ -62,7 +62,7 @@ function os2web_taxonomies_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'egennavne_stednavne',
+        'vocabulary' => 'os2web_taxonomies_tax_places',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:0',
@@ -106,12 +106,12 @@ function os2web_taxonomies_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 0,
   );
-  $export['taxonomy_gisnames'] = $feeds_importer;
+  $export['os2web_taxonomies_feed_gis'] = $feeds_importer;
 
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'taxonomy_kle';
+  $feeds_importer->id = 'os2web_taxonomies_feed_kle';
   $feeds_importer->config = array(
     'name' => 'Taksonomi: KLE',
     'description' => 'Importerer KLE taksonomien',
@@ -169,7 +169,7 @@ function os2web_taxonomies_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'kle',
+        'vocabulary' => 'os2web_taxonomies_tax_kle',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -228,12 +228,12 @@ function os2web_taxonomies_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 0,
   );
-  $export['taxonomy_kle'] = $feeds_importer;
+  $export['os2web_taxonomies_feed_kle'] = $feeds_importer;
 
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'taxonomy_organization';
+  $feeds_importer->id = 'os2web_taxonomies_feed_org';
   $feeds_importer->config = array(
     'name' => 'Taksonomi: Organisation',
     'description' => 'Importerer Organisation taksonomien',
@@ -279,7 +279,7 @@ function os2web_taxonomies_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'organisation',
+        'vocabulary' => 'os2web_taxonomies_tax_org',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -318,12 +318,12 @@ function os2web_taxonomies_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 0,
   );
-  $export['taxonomy_organization'] = $feeds_importer;
+  $export['os2web_taxonomies_feed_org'] = $feeds_importer;
 
   $feeds_importer = new stdClass();
   $feeds_importer->disabled = FALSE; /* Edit this to true to make a default feeds_importer disabled initially */
   $feeds_importer->api_version = 1;
-  $feeds_importer->id = 'taxonomy_politics';
+  $feeds_importer->id = 'os2web_taxonomies_feed_politics';
   $feeds_importer->config = array(
     'name' => 'Taksonomi: Politik',
     'description' => 'Importerer Politik taksonomien',
@@ -369,7 +369,7 @@ function os2web_taxonomies_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'politik',
+        'vocabulary' => 'os2web_taxonomies_tax_politics',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -408,7 +408,7 @@ function os2web_taxonomies_feeds_importer_default() {
     'import_on_create' => 1,
     'process_in_background' => 0,
   );
-  $export['taxonomy_politics'] = $feeds_importer;
+  $export['os2web_taxonomies_feed_politics'] = $feeds_importer;
 
   return $export;
 }

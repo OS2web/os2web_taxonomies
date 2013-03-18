@@ -9,57 +9,57 @@
  */
 function os2web_taxonomies_taxonomy_default_vocabularies() {
   return array(
-    'acadremmcomittee' => array(
+    'os2web_taxonomies_tax_comittee' => array(
       'name' => 'AcadreMMComittee',
-      'machine_name' => 'acadremmcomittee',
+      'machine_name' => 'os2web_taxonomies_tax_comittee',
       'description' => 'Taxonomi indeholdende diverse udvalg med system-id fra Acadre MM. Bruges til mapning af dagsordensvisning på web.',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'egennavne_stednavne' => array(
+    'os2web_taxonomies_tax_places' => array(
       'name' => 'Egennavne/stednavne',
-      'machine_name' => 'egennavne_stednavne',
+      'machine_name' => 'os2web_taxonomies_tax_places',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'kle' => array(
+    'os2web_taxonomies_tax_kle' => array(
       'name' => 'KLE',
-      'machine_name' => 'kle',
+      'machine_name' => 'os2web_taxonomies_tax_kle',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'organisation' => array(
+    'os2web_taxonomies_tax_org' => array(
       'name' => 'Organisation',
-      'machine_name' => 'organisation',
+      'machine_name' => 'os2web_taxonomies_tax_org',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'politik' => array(
+    'os2web_taxonomies_tax_politics' => array(
       'name' => 'Politik',
-      'machine_name' => 'politik',
+      'machine_name' => 'os2web_taxonomies_tax_politics',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'portalkategori' => array(
+    'os2web_taxonomies_tax_portal_cat' => array(
       'name' => 'Portalkategori',
-      'machine_name' => 'portalkategori',
+      'machine_name' => 'os2web_taxonomies_tax_portal_cat',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'redaktoertags' => array(
+    'os2web_taxonomies_tax_editor_tag' => array(
       'name' => 'Stikord',
-      'machine_name' => 'redaktoertags',
+      'machine_name' => 'os2web_taxonomies_tax_editor_tag',
       'description' => 'Taksonomi til at opsamle redaktørers egne tags',
       'hierarchy' => '0',
       'module' => 'taxonomy',
@@ -73,9 +73,9 @@ function os2web_taxonomies_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => '0',
     ),
-    'user_position' => array(
+    'os2web_taxonomies_tax_user_pos' => array(
       'name' => 'User position',
-      'machine_name' => 'user_position',
+      'machine_name' => 'os2web_taxonomies_tax_user_pos',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
