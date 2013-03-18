@@ -1,4 +1,4 @@
-name = Taxonomies and taxonomy importers
+name = OS2Web Taxonomies
 description = Module to import taxonomies and its vocabularies
 core = 7.x
 package = OS2Web - Core
