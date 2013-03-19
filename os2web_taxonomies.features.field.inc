@@ -1019,101 +1019,6 @@ function field_os2web_taxonomies_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_taxonomies_contact'.
-  $fields['taxonomy_term-os2web_taxonomies_tax_site_struc-field_os2web_taxonomies_contact'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_os2web_taxonomies_contact',
-      'foreign keys' => array(
-        'nid' => array(
-          'columns' => array(
-            'nid' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'nid' => array(
-          0 => 'nid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'node_reference',
-      'settings' => array(
-        'referenceable_types' => array(
-          'borger_dk_permalink' => 0,
-          'borgerservices' => 0,
-          'contentpage' => 0,
-          'esdh_dokument' => 0,
-          'esdh_sag' => 0,
-          'files' => 0,
-          'galleri' => 0,
-          'iframe_selvbetjeningsl_sning_mm' => 0,
-          'institution' => 0,
-          'knactivity' => 0,
-          'kontaktblok' => 'kontaktblok',
-          'local_plan' => 0,
-          'media' => 0,
-          'news' => 0,
-          'ofir_job' => 0,
-          'panel' => 0,
-          'person' => 0,
-          'politician' => 0,
-          'referat' => 0,
-          'right_column' => 0,
-          'rotating_image' => 0,
-          'selvbetjeningslinks' => 0,
-          'spotbox' => 0,
-          'tema' => 0,
-          'webform' => 0,
-        ),
-        'view' => array(
-          'args' => array(),
-          'display_name' => '',
-          'view_name' => '',
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'node_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'os2web_taxonomies_tax_site_struc',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'node_reference',
-          'settings' => array(),
-          'type' => 'node_reference_default',
-          'weight' => 6,
-        ),
-      ),
-      'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_os2web_taxonomies_contact',
-      'label' => 'Kontaktblok',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'node_reference',
-        'settings' => array(
-          'autocomplete_match' => 'contains',
-          'autocomplete_path' => 'node_reference/autocomplete',
-          'size' => '60',
-        ),
-        'type' => 'node_reference_autocomplete',
-        'weight' => '8',
-      ),
-    ),
-  );
-
   // Exported field: 'taxonomy_term-os2web_taxonomies_tax_user_pos-field_os2web_taxonomies_priority'.
   $fields['taxonomy_term-os2web_taxonomies_tax_user_pos-field_os2web_taxonomies_priority'] = array(
     'field_config' => array(
@@ -1181,7 +1086,6 @@ function field_os2web_taxonomies_default_fields() {
   t('GIS postby');
   t('GIS type');
   t('KLE stikord');
-  t('Kontaktblok');
   t('Lovhenvisninger');
   t('Priority');
   t('Systemid');
