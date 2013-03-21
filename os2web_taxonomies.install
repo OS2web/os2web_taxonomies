@@ -1,12 +1,12 @@
 <?php
-
-// $Id$
-/*
- *
- * @author Jesper Mathiassen <jm@bellcom.dk>
- * @copyright Bellcom Open Source aps.
+/**
+ * @file
+ * os2we_taxonomies.install
  */
 
+/**
+ * Implements hook_enable().
+ */
 function os2web_taxonomies_enable() {
   //Set default KLE taxonomy feed url
   $source = feeds_source('os2web_taxonomies_feed_kle');
