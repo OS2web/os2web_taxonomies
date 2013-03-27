@@ -7,7 +7,7 @@
 /**
  * Implements hook_field_default_fields().
  */
-function field_os2web_taxonomies_default_fields() {
+function os2web_taxonomies_field_default_fields() {
   $fields = array();
 
   // Exported field: 'taxonomy_term-os2web_taxonomies_tax_comittee-field_os2web_taxonomies_dep_id'.
