@@ -13,13 +13,13 @@ core = 7.x
 
 ; Features + related
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.0-beta1"
+projects[features][version] = "2.0-beta2"
 
 ; Panels
 
 ; Basic
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.2"
+projects[ctools][version] = "1.3"
 
 projects[feeds_xpathparser][subdir] = "contrib"
 projects[feeds_xpathparser][version] = "1.x-dev"
