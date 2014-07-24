@@ -57,6 +57,8 @@ function os2web_taxonomies_form_os2web_settings_settings_form_alter(&$form, &$fo
     '#collapsed' => FALSE,
   );
 
+  $form['#attached']['js'][] = drupal_get_path('module', 'os2web_taxonomies') . '/os2web_taxonomies.js';
+
   // Lets loop trough all content types and see which has the KLE field.
   foreach ($types = node_type_get_types() as $type) {
     if (field_info_instance('node', 'field_os2web_base_field_kle_ref', $type->type)) {
@@ -84,8 +86,53 @@ function os2web_taxonomies_form_os2web_settings_settings_form_alter(&$form, &$fo
           ),
         ),
       );
+      $form['os2web_taxonomies_tax_kle']['os2web_taxonomies-' . $type->type]['os2web_taxonomies-' . $type->type . '-delete_refs'] = array(
+        '#type' => 'button',
+        '#value' => t('Delete KLE references from !type', array('!type' => $type->name)),
+        '#attributes' => array(
+          'class' => array('confirm'),
+        ),
+        // 'attributes' => array('class' => array('confirm')),
+        '#states' => array(
+          // Only show this field when KLE is not required.
+          'visible' => array(
+            ':input[name="os2web_taxonomies-' . $type->type . '-kle_required"]' => array('checked' => FALSE),
+            ':input[name="os2web_taxonomies-' . $type->type . '-kle_hidden"]' => array('checked' => TRUE),
+          ),
+        ),
+        '#ajax' => array(
+          'callback' => 'os2web_taxonomies_delete_kle_references',
+          'wrapper' => 'edit-os2web-taxonomies-' . str_replace('_', '-', $type->type) . '-delete-refs',
+          'method' => 'replace',
+          'event' => 'click',
+        ),
+      );
     }
   }
+}
+
+/**
+ * Ajax callback, to delete all KLE references for a specific content type.
+ */
+function os2web_taxonomies_delete_kle_references($form, $form_state) {
+  $button = $form_state['clicked_button'];
+  $parent = array_shift($button['#parents']);
+  $parent = explode('-', $parent);
+
+  if (!empty($parent[1])) {
+    $content_type = $parent[1];
+
+    $nodes = node_load_multiple(array(), array('type' => $content_type));
+    foreach ($nodes as $nid => $node) {
+      $node->revision = TRUE;
+      $node->log = t('Deleted automatically by OS2web Taxonomies script.');
+      $lang = field_language('node', $node, 'field_os2web_base_field_kle_ref');
+      unset($node->field_os2web_base_field_kle_ref[$lang]);
+      node_save($node);
+    }
+  }
+
+  return t('All KLE references are now removed from this type.');
 }
 
 /**
